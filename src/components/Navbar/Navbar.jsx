@@ -37,7 +37,7 @@ const Navbar = () => {
           </li>
           <li className={styles.navItem}>
             <a href="#services" className={styles.navLink}>
-              Services
+            Enquiry
               <span className={styles.underline}></span>
             </a>
           </li>
@@ -82,7 +82,7 @@ const Navbar = () => {
         <ul className={styles.mobileNavLinks}>
           <li><a href="#home" onClick={toggleMobileMenu}>Home</a></li>
           <li><a href="#about" onClick={toggleMobileMenu}>About</a></li>
-          <li><a href="#services" onClick={toggleMobileMenu}>Services</a></li>
+          <li><a href="#services" onClick={toggleMobileMenu}>Enquiry</a></li>
           <li><a href="#portfolio" onClick={toggleMobileMenu}>Portfolio</a></li>
           <li><a href="#contact" onClick={toggleMobileMenu}>Contact</a></li>
         </ul>

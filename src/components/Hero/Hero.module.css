@@ -1,0 +1,149 @@
+.heroSection{
+    background:#0f1724;
+    padding-top:140px;
+    padding-bottom:120px;
+    display:flex;
+    justify-content:center;
+    }
+    
+    .heroContainer{
+    width:1200px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    }
+    
+    .leftSide{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+    }
+    
+    .badge{
+    width:max-content;
+    padding:8px 16px;
+    border-radius:30px;
+    background:rgba(80,200,180,0.12);
+    color:#66e0c2;
+    font-size:13px;
+    letter-spacing:1px;
+    font-weight:600;
+    }
+    
+    .heroTitle{
+    font-size:54px;
+    line-height:1.1;
+    font-weight:700;
+    color:white;
+    max-width:600px;
+    }
+    
+    .heroTitle span{
+    color:#3dd5c2;
+    }
+    
+    .heroDescription{
+    font-size:18px;
+    color:#b7c2d1;
+    max-width:520px;
+    line-height:1.6;
+    }
+    
+    .services{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:10px;
+    }
+    
+    .services span{
+    font-size:14px;
+    padding:10px 16px;
+    border-radius:8px;
+    background:#162033;
+    color:#a9b5c7;
+    }
+    
+    .buttons{
+    display:flex;
+    gap:16px;
+    margin-top:20px;
+    }
+    
+    .primaryBtn{
+    padding:14px 28px;
+    background:#3dd5c2;
+    border:none;
+    border-radius:8px;
+    color:#042221;
+    font-weight:600;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.25s;
+    }
+    
+    .primaryBtn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(61,213,194,0.3);
+    }
+    
+    .secondaryBtn{
+    padding:14px 28px;
+    background:transparent;
+    border:1px solid #2d3a52;
+    border-radius:8px;
+    color:#c9d4e5;
+    font-weight:500;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.25s;
+    }
+    
+    .secondaryBtn:hover{
+    background:#162033;
+    }
+    
+    .rightSide{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }
+    
+    .deviceFrame{
+        width:520px;
+        height:380px;
+        background:#0b111b;
+        border-radius:18px;
+        padding:16px;
+        box-shadow:0 20px 60px rgba(0,0,0,0.5);
+        border:1px solid #1f2a40;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        }
+    
+    .previewImage{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+    }
+
+    .previewImage{
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        border-radius:10px;
+        transition:opacity 0.4s ease;
+        }
+        
+        .fadeIn{
+        opacity:1;
+        }
+        
+        .fadeOut{
+        opacity:0;
+        }
