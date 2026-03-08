@@ -1,12 +1,12 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Link from "next/link";
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,47 +15,49 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.navContainer}>
-        {/* Logo */}
+        
         <div className={styles.logo}>
           <span className={styles.logoText}>ArKal</span>
           <span className={styles.logoDot}>.</span>
         </div>
 
-        {/* Desktop Navigation */}
         <ul className={styles.navLinks}>
           <li className={styles.navItem}>
-            <a href="#home" className={styles.navLink}>
+            <Link href="/" className={styles.navLink}>
               Home
               <span className={styles.underline}></span>
-            </a>
+            </Link>
           </li>
+
           <li className={styles.navItem}>
-            <a href="#about" className={styles.navLink}>
+            <Link href="/about" className={styles.navLink}>
               About
               <span className={styles.underline}></span>
-            </a>
+            </Link>
           </li>
+
           <li className={styles.navItem}>
-            <a href="#services" className={styles.navLink}>
-            Enquiry
+            <Link href="/enquiry" className={styles.navLink}>
+              Enquiry
               <span className={styles.underline}></span>
-            </a>
+            </Link>
           </li>
+
           <li className={styles.navItem}>
-            <a href="#portfolio" className={styles.navLink}>
+            <Link href="/portfolio" className={styles.navLink}>
               Portfolio
               <span className={styles.underline}></span>
-            </a>
+            </Link>
           </li>
+
           <li className={styles.navItem}>
-            <a href="#contact" className={styles.navLink}>
+            <Link href="/contact" className={styles.navLink}>
               Contact
               <span className={styles.underline}></span>
-            </a>
+            </Link>
           </li>
         </ul>
 
-        {/* CTA Button */}
         <div className={styles.ctaContainer}>
           <button className={styles.ctaButton}>
             <span className={styles.ctaText}>Get Started</span>
@@ -65,7 +67,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button 
           className={`${styles.mobileMenuBtn} ${isMobileMenuOpen ? styles.active : ''}`}
           onClick={toggleMobileMenu}
@@ -77,14 +78,13 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
         <ul className={styles.mobileNavLinks}>
-          <li><a href="#home" onClick={toggleMobileMenu}>Home</a></li>
-          <li><a href="#about" onClick={toggleMobileMenu}>About</a></li>
-          <li><a href="#services" onClick={toggleMobileMenu}>Enquiry</a></li>
-          <li><a href="#portfolio" onClick={toggleMobileMenu}>Portfolio</a></li>
-          <li><a href="#contact" onClick={toggleMobileMenu}>Contact</a></li>
+          <li><Link href="/" onClick={toggleMobileMenu}>Home</Link></li>
+          <li><Link href="/about" onClick={toggleMobileMenu}>About</Link></li>
+          <li><Link href="/enquiry" onClick={toggleMobileMenu}>Enquiry</Link></li>
+          <li><Link href="/portfolio" onClick={toggleMobileMenu}>Portfolio</Link></li>
+          <li><Link href="/contact" onClick={toggleMobileMenu}>Contact</Link></li>
         </ul>
         <button className={styles.mobileCta}>Get Started</button>
       </div>
