@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar/Navbar";
 import styles from "./enquiry.module.css";
+import Footer from "@/components/Footer/Footer";
 
 export default function Enquiry() {
   return (
@@ -11,6 +12,8 @@ export default function Enquiry() {
 
         <br/><br/>
         <br/><br/>
+        <br/><br/>
+
       <section className={styles.enquirySection}>
         <div className={styles.enquiryContainer}>
           <div className={styles.imageSide}>
@@ -53,6 +56,14 @@ export default function Enquiry() {
           </div>
         </div>
       </section>
+
+
+
+<div className={styles.emptySection}>
+  Empty section
+</div>
+
+      <Footer/>
     </div>
   );
 }

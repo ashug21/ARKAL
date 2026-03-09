@@ -1,0 +1,92 @@
+.portfolioSectionz{
+    background:#0c2b4a;
+    padding-top:120px;
+    padding-bottom:120px;
+    display:flex;
+    justify-content:center;
+    }
+    
+    .containerz{
+    width:1200px;
+    }
+    
+    .titlez{
+    color:#ffffff;
+    font-size:42px;
+    text-align:center;
+    margin-bottom:80px;
+    font-weight:600;
+    }
+    
+    .gridz{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    }
+    
+    .cardz{
+    background:#030712;
+    padding:45px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.35s;
+    }
+    
+    .cardz:hover{
+    transform:translateY(-10px);
+    border-color:#3b82f6;
+    }
+    
+    .rolez{
+    color:#ffffff;
+    font-size:24px;
+    margin-bottom:18px;
+    }
+    
+    .descz{
+    color:#94a3b8;
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:30px;
+    }
+    
+    .actionsz{
+    display:flex;
+    gap:20px;
+    }
+    
+    .primarybtnz{
+    background:#2563eb;
+    color:white;
+    padding:12px 22px;
+    border-radius:8px;
+    font-size:14px;
+    text-decoration:none;
+    transition:0.3s;
+    }
+    
+    .primarybtnz:hover{
+    background:#1d4ed8;
+    }
+    
+    .secondarybtnz{
+    border:1px solid rgba(255,255,255,0.15);
+    color:#cbd5f5;
+    padding:12px 22px;
+    border-radius:8px;
+    font-size:14px;
+    text-decoration:none;
+    transition:0.3s;
+    }
+    
+    .secondarybtnz:hover{
+    border-color:#3b82f6;
+    color:white;
+    }
+
+    .emptySection{
+        height: 500px;
+        width: 100%;
+        background-color:#0c2b4a;
+        color: #0c2b4a;
+    }
