@@ -16,22 +16,15 @@ const Navbar = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.navContainer}>
         
-        <div className={styles.logo}>
+        <Link  href="/" className={styles.logo}>
           <span className={styles.logoText}>ArKal</span>
           <span className={styles.logoDot}>.</span>
-        </div>
+        </Link>
 
         <ul className={styles.navLinks}>
           <li className={styles.navItem}>
             <Link href="/" className={styles.navLink}>
               Home
-              <span className={styles.underline}></span>
-            </Link>
-          </li>
-
-          <li className={styles.navItem}>
-            <Link href="/about" className={styles.navLink}>
-              About
               <span className={styles.underline}></span>
             </Link>
           </li>
@@ -81,7 +74,6 @@ const Navbar = () => {
       <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
         <ul className={styles.mobileNavLinks}>
           <li><Link href="/" onClick={toggleMobileMenu}>Home</Link></li>
-          <li><Link href="/about" onClick={toggleMobileMenu}>About</Link></li>
           <li><Link href="/enquiry" onClick={toggleMobileMenu}>Enquiry</Link></li>
           <li><Link href="/portfolio" onClick={toggleMobileMenu}>Portfolio</Link></li>
           <li><Link href="/contact" onClick={toggleMobileMenu}>Contact</Link></li>

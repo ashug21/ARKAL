@@ -1,0 +1,141 @@
+.page{
+    background:#0b1120;
+    min-height:100vh;
+    }
+    
+    .contactSection{
+    padding:140px 20px 80px;
+    display:flex;
+    justify-content:center;
+    }
+    
+    .container{
+    width:1100px;
+    max-width:100%;
+    text-align:center;
+    }
+    
+    .title{
+    font-size:46px;
+    font-weight:700;
+    margin-bottom:50px;
+    background:linear-gradient(90deg,#facc15,#f97316);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    }
+    
+    .form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    }
+    
+    .input{
+    padding:16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.08);
+    background:#111827;
+    color:white;
+    font-size:16px;
+    outline:none;
+    }
+    
+    .textarea{
+    padding:16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.08);
+    background:#111827;
+    color:white;
+    font-size:16px;
+    outline:none;
+    height:140px;
+    resize:none;
+    }
+    
+    .button{
+    margin-top:10px;
+    padding:16px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    background:linear-gradient(90deg,#facc15,#f97316);
+    cursor:pointer;
+    }
+    
+    .connectSection{
+    padding:80px 20px 140px;
+    display:flex;
+    justify-content:center;
+    }
+    
+    .connectTitle{
+    font-size:36px;
+    font-weight:600;
+    margin-bottom:50px;
+    color:white;
+    }
+    
+    .socialGrid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:60px;
+    flex-wrap:wrap;
+    }
+    
+    .socialCard{
+    background:#111827;
+    border:1px solid rgba(255,255,255,0.05);
+    padding:20px 40px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+    }
+    
+    .socialCard:hover{
+    transform:translateY(-6px);
+    border:1px solid rgba(249,115,22,.4);
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+    }
+    
+    .icon{
+    width:28px;
+    height:28px;
+    }
+    
+    .phoneBox{
+    margin-top:10px;
+    }
+    
+    .phoneTitle{
+    font-size:18px;
+    color:#94a3b8;
+    margin-bottom:10px;
+    }
+    
+    .phoneNumbers{
+    font-size:22px;
+    color:white;
+    font-weight:500;
+    }
+    
+    @media(max-width:600px){
+    
+    .form{
+    width:100%;
+    }
+    
+    .socialGrid{
+    flex-direction:column;
+    align-items:center;
+    }
+    
+    }

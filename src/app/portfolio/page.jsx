@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import styles from "./portfolio.module.css";
 import Link from "next/link";
 import Footer from "@/components/Footer/Footer";
+import Team from "@/components/Team/Team";
 
 export default function Portfolio() {
   return (
@@ -50,26 +51,28 @@ export default function Portfolio() {
               </p>
 
               <div className={styles.actionsz}>
-                <a
-                  href="https://your-designer-portfolio-link.com"
+                <Link
+                  href="#"
                   target="_blank"
                   className={styles.primarybtnz}
                 >
                   Visit Portfolio
-                </a>
+                </Link>
 
-                <a
-                  href="/designer-resume.pdf"
+                <Link
+                  href="/resume/DhruvResume.pdf"
                   download
                   className={styles.secondarybtnz}
                 >
                   Download Resume
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
+<br/>
+<Team/>
 
       <div className={styles.emptySection}>
   Empty section
