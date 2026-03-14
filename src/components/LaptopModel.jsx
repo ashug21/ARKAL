@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei"
 
 export default function LaptopModel() {
 
-  const model = useGLTF("/models/laptop.glb")
+  const model = useGLTF("/models/Laptop.glb")
 
   return (
     <primitive
